@@ -30,13 +30,13 @@ async def team_config(run_dir: Path):
     run_dir should already exist (app creates it) and contain dataset files copied in.
     """
     model = OpenAIChatCompletionClient(
-        model="gemini-2.5-flash",
+        model="gemini-2.5-pro",
         model_info=ModelInfo(
             vision=False,
             json_output=False,
             structured_output=False,
             function_calling=True,
-            family="gemini-2.5-flash",
+            family="gemini-2.5-pro",
         ),
         api_key=GEMINI_API_KEY,
         temperature=0.1,
